@@ -473,9 +473,9 @@ public:   //--------------------------------------------------------------------
 
     // define init settings for TRX868
     static const uint8_t initVal[] PROGMEM = {
-      CC1101_IOCFG2,    0x2E, //                      // non inverted GDO2, high impedance tri state
+      CC1101_IOCFG0,    0x2E, //                      // non inverted GDO2, high impedance tri state
       // /CC1101_IOCFG1,    0x2E, // (default)            // low output drive strength, non inverted GD=1, high impedance tri state
-      CC1101_IOCFG0,    0x06, // packet CRC ok        // disable temperature sensor, non inverted GDO0,
+      CC1101_IOCFG2,    0x06, // packet CRC ok        // disable temperature sensor, non inverted GDO0,
       CC1101_FIFOTHR,   0x0D,                         // 0 ADC retention, 0 close in RX, TX FIFO = 9 / RX FIFO = 56 byte
       CC1101_SYNC1,     0xE9,                         // Sync word
       CC1101_SYNC0,     0xCA,
